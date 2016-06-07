@@ -1,4 +1,0 @@
-PKG_LIBS=`Rcpp:::LdFlags()`
-PKG_CXXFLAGS=`Rcpp:::CxxFlags()`
-all: $(SHLIB)
-CXX_STD = CXX11
