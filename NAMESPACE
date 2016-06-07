@@ -1,0 +1,25 @@
+useDynLib(FunChIP, kmean_function)
+
+import(Rcpp)
+import(fda)
+import(doParallel)
+import(shiny)
+import(methods)
+import(foreach)
+import(parallel)
+import(GenomicRanges)
+import(GenomicAlignments)
+import(GenomeInfoDb)
+import(Rsamtools)
+importFrom("grDevices", "rainbow")
+importFrom("graphics", "legend", "lines", "par", "plot", "points")
+importFrom("stats", "median")
+
+
+exportMethods(summit_peak, choose_k,
+              cluster_peak, pileup_peak, plot_peak, 
+              smooth_peak)
+              
+export(summit_peak, choose_k,
+      cluster_peak, pileup_peak, distance_peak, plot_peak, 
+      smooth_peak, compute_fragments_length)
