@@ -9,10 +9,11 @@
 #include<cmath>
 #include<iterator>
 #include<cstdlib>
+#include<Rcpp.h>
 #include<R.h>
 #include<Rdefines.h>
 #include<Rmath.h>
-#include<Rcpp.h>
+
 
 
 typedef std::pair<int, double> shift_dist;
